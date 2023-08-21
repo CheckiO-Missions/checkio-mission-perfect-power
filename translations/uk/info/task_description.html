@@ -1,0 +1,54 @@
+<!-- Describe task in general -->
+
+<p style="text-align: justify;">
+    Натуральне число <b>n</b> є <a target="_blank" href="https://en.wikipedia.org/wiki/Perfect_power">perfect power</a>, якщо його можна подати у вигляді степеня <b>b<sup>e</sup></b> для деяких двох цілих чисел <b>b</b> та <b>e</b>, які обидва більші за одиницю. (Будь-яке натуральне число n завжди можна подати у вигляді тривіального степеня <sup>n1</sup>, тому нас це не цікавить) Наприклад, числа 32, 125 і 441 є досконалими степенями, оскільки вони дорівнюють<sup>25</sup>,<sup>53</sup> і<sup>212</sup> відповідно.  
+</p>
+<p style="text-align: justify;">
+    Ця функція повинна визначити, чи є натуральне число <b>n</b> досконалим степенем. Ваша функція повинна якимось чином перебрати достатню кількість можливих комбінацій <b>b</b> та <b>e</b>, які можуть спрацювати, повертаючи <b>{% if is_js %}t{% else %}T{% endif %}rue</b> одразу після того, як знайдено деякі <b>b</b> та <b>e</b>, які задовольняють умові <b>b<sup>e</sup> == n</b>і повертається <b>{% if is_js %}f{% else %}F{% endif %}alse</b> коли всі відповідні можливості для <b>b</b> і <b>e</b> були перебрані і визнані незадовільними.
+</p>
+<p style="text-align: justify;">
+    Оскільки множина <b>n</b> може бути досить великою, ваша функція не повинна перебирати занадто багато комбінацій, крім тих, які є необхідними і достатніми для надійного визначення відповіді. Досягнення цієї ефективності є центральним навчальним моментом цієї проблеми.    
+</p>
+
+<!-- <p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}example.png" alt="example" style="max-height: 83px"/>
+</p> -->
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Вхідні дані:</strong> Ціле число <span>({% if is_js %}number{% else %}int{% endif %})</span>.
+</p>
+
+<p>
+   <strong>Вихідні дані:</strong> Логічне значення <span>(bool{% if is_js %}ean{% endif %})</span>.
+</p>
+
+
+<p>
+    <strong>Приклади:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<!-- <p class="for_info_only">
+
+    <strong>How it’s used:</strong>
+    <i>(math is used everywhere)</i>
+</p> -->
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p>
+    <strong>Передумови:</strong>
+    <ul>
+    <li><i>n &gt; 0</i>.</li>
+    </ul>
+</p>
+
+<p style="text-align: justify;">
+    У зв'язку з цією місією вас може зацікавити <a target="_blank" href="https://en.wikipedia.org/wiki/Catalan's_conjecture">Catalan’s conjecture</a>- доведена математична теорема, яка стверджує, що після окремого випадку двох послідовних досконалих степенів 8 і 9, коли натуральне число <b>n</b> є досконалим степенем, <b>n – 1</b> ніколи не є досконалим степенем. Наприклад, нам не потрібно перебирати всі можливі способи вираження числа у вигляді цілого степеня, щоб одразу зрозуміти, що <sup>1234567890-1</sup> не є досконалим степенем. Це також ілюструє загальну асиметрію між виконанням обчислень у протилежних напрямках. Маючи велике чунгуське число, наприклад, 4922235242952026704037113243122008064, але не знаючи формули, за якою воно було отримане, не так просто визначити, чи є це число досконалим степенем, чи якимось досконалим степенем плюс мінус одиниця. 
+</p>
+
+<p><i>Завдання взято з сайту <span>Python CCPS 109</span>. Його викладають для <span>Ryerson Chang School of Continuing Education</span> <a href="https://github.com/ikokkari">Ilkka Kokkarinen</a></i></p>
