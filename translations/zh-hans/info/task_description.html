@@ -1,7 +1,7 @@
 <!-- Describe task in general -->
 
 <p style="text-align: justify;">
-    如果一个正整数<b>n</b> 可以用幂来表示，那么它就是<a target="_blank" href="https://en.wikipedia.org/wiki/Perfect_power">perfect power</a> 。 <b>b<sup>e</sup></b><b>b</b> 和<b>e</b> 这两个整数都大于 1 的幂。(任何正整数 n 总是可以表示为微幂<sup>n1</sup>，所以我们不关心这些）。例如，整数 32、125 和 441 都是完全幂，因为它们分别等于 2<sup>5</sup>、 5<sup>3</sup> 和 21<sup>2</sup>。  
+    如果一个正整数<b>n</b> 可以用幂来表示，那么它就是<a target="_blank" href="https://en.wikipedia.org/wiki/Perfect_power">perfect power</a> 。 <b>b<sup>e</sup></b><b>b</b> 和<b>e</b> 这两个整数都大于 1 的幂。(任何正整数 n 总是可以表示为微幂n<sup>1</sup>，所以我们不关心这些）。例如，整数 32、125 和 441 都是完全幂，因为它们分别等于 2<sup>5</sup>、 5<sup>3</sup> 和 21<sup>2</sup>。  
 </p>
 <p style="text-align: justify;">
     此函数应确定正整数<b>n</b> 是否为完全幂。您的函数需要以某种方式遍历足够多的<b>b</b> 和<b>e</b> 的可能组合，当找到某个 和 的可能组合时，立即返回 <b>{% if is_js %}t{% else %}T{% endif %}rue</b>当找到满足以下条件的<b>b</b> 和<b>e</b> 时，立即返回 <b>b<sup>e</sup> == n</b> 时，立即返回 <b>{% if is_js %}f{% else %}F{% endif %}alse</b>当尝试了<b>b</b> 和<b>e</b> 的所有相关可能性并发现不符合要求时，返回
