@@ -1,0 +1,54 @@
+<!-- Describe task in general -->
+
+<p style="text-align: justify;">
+    Un entier positif <b>n</b> est un <a target="_blank" href="https://en.wikipedia.org/wiki/Perfect_power">perfect power</a> s'il peut être exprimé sous forme de puissance <b>b<sup>e</sup></b> pour deux entiers <b>b</b> et <b>e</b> qui sont tous deux supérieurs à un. (Tout entier positif n peut toujours être exprimé comme la puissance triviale <sup>n1</sup>, nous ne nous en soucions donc pas) Par exemple, les entiers 32, 125 et 441 sont des puissances parfaites puisqu'ils sont respectivement égaux à<sup>25</sup>,<sup>53</sup> et<sup>212</sup>.  
+</p>
+<p style="text-align: justify;">
+    Cette fonction doit déterminer si l'entier positif <b>n</b> est une puissance parfaite. Votre fonction doit en quelque sorte itérer sur un nombre suffisant de combinaisons possibles de <b>b</b> et <b>e</b> qui pourraient fonctionner, en retournant immédiatement <b>{% if is_js %}t{% else %}T{% endif %}rue</b> dès que vous trouvez des combinaisons <b>b</b> et <b>e</b> qui satisfont <b>b<sup>e</sup> == n</b>et retourner <b>{% if is_js %}f{% else %}F{% endif %}alse</b> lorsque toutes les possibilités pertinentes pour <b>b</b> et <b>e</b> ont été essayées et jugées insuffisantes.
+</p>
+<p style="text-align: justify;">
+    Étant donné que <b>n</b> peut devenir très grand, votre fonction ne doit pas examiner trop de combinaisons au-delà de celles qui sont à la fois nécessaires et suffisantes pour déterminer la réponse de manière fiable. Atteindre cette efficacité est le point éducatif central de ce problème.    
+</p>
+
+<!-- <p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}example.png" alt="example" style="max-height: 83px"/>
+</p> -->
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Entrée:</strong> Entier <span>({% if is_js %}number{% else %}int{% endif %})</span>.
+</p>
+
+<p>
+   <strong>Sortie:</strong> Valeur logique <span>(bool{% if is_js %}ean{% endif %})</span>.
+</p>
+
+
+<p>
+    <strong>Exemples:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<!-- <p class="for_info_only">
+
+    <strong>How it’s used:</strong>
+    <i>(math is used everywhere)</i>
+</p> -->
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p>
+    <strong>Conditions préalables:</strong>
+    <ul>
+    <li><i>n &gt; 0</i>.</li>
+    </ul>
+</p>
+
+<p style="text-align: justify;">
+    En rapport avec la mission, vous serez peut-être intéressé par <a target="_blank" href="https://en.wikipedia.org/wiki/Catalan's_conjecture">Catalan’s conjecture</a>, un théorème mathématique prouvé qui dit qu'après le cas particulier des deux puissances parfaites consécutives 8 et 9, chaque fois qu'un entier positif <b>n</b> est une puissance parfaite, <b>n – 1</b> n'est jamais une puissance parfaite. Par exemple, il n'est pas nécessaire de passer en revue toutes les façons possibles d'exprimer le nombre comme une puissance entière pour savoir d'emblée que <sup>1234567890-1</sup> n'est pas une puissance parfaite. Cela illustre également l'asymétrie courante entre l'exécution d'un calcul dans des directions opposées. Si l'on dispose d'un grand nombre entier comme 4922235242952026704037113243122008064, mais pas de la formule qui l'a produit à l'origine, il n'est pas facile de dire si ce nombre entier est une puissance parfaite ou une puissance parfaite plus moins un. 
+</p>
+
+<p><i>La mission est tirée de <span>Python CCPS 109</span>. Elle est enseignée pour <span>Ryerson Chang School of Continuing Education</span> par <a href="https://github.com/ikokkari">Ilkka Kokkarinen</a></i></p>
