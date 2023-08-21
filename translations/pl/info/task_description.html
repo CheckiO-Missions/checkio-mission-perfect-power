@@ -1,0 +1,54 @@
+<!-- Describe task in general -->
+
+<p style="text-align: justify;">
+    Dodatnia liczba całkowita <b>n</b> jest liczbą <a target="_blank" href="https://en.wikipedia.org/wiki/Perfect_power">perfect power</a>, jeśli można ją wyrazić jako potęgę <b>b<sup>e</sup></b> dla pewnych dwóch liczb całkowitych <b>b</b> i <b>e</b>, które są większe od jeden. (Każda dodatnia liczba całkowita n może być zawsze wyrażona jako trywialna potęga <sup>n1</sup>, więc nie dbamy o te) Na przykład, liczby całkowite 32, 125 i 441 są potęgami doskonałymi, ponieważ są równe odpowiednio<sup>25</sup>,<sup>53</sup> i<sup>212</sup>.  
+</p>
+<p style="text-align: justify;">
+    Funkcja ta powinna określić, czy dodatnia liczba całkowita <b>n</b> jest potęgą doskonałą. Pana funkcja musi w jakiś sposób iterować przez wystarczającą liczbę możliwych kombinacji <b>b</b> i <b>e</b>, które mogą działać, zwracając <b>{% if is_js %}t{% else %}T{% endif %}rue</b> natychmiast po znalezieniu kombinacji <b>b</b> i <b>e</b>, które spełniają warunek <b>b<sup>e</sup> == n</b>i zwraca <b>{% if is_js %}f{% else %}F{% endif %}alse</b> gdy wszystkie odpowiednie możliwości dla <b>b</b> i <b>e</b> zostały wypróbowane i uznane za nieodpowiednie.
+</p>
+<p style="text-align: justify;">
+    Ponieważ <b>n</b> może być dość duże, funkcja nie powinna sprawdzać zbyt wielu kombinacji ponad te, które są zarówno konieczne, jak i wystarczające do wiarygodnego określenia odpowiedzi. Osiągnięcie tej wydajności jest głównym punktem edukacyjnym tego problemu.    
+</p>
+
+<!-- <p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}example.png" alt="example" style="max-height: 83px"/>
+</p> -->
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Dane wejściowe:</strong> Liczba całkowita <span>({% if is_js %}number{% else %}int{% endif %})</span>.
+</p>
+
+<p>
+   <strong>Wyjście:</strong> Wartość logiczna <span>(bool{% if is_js %}ean{% endif %})</span>.
+</p>
+
+
+<p>
+    <strong>Przykłady:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<!-- <p class="for_info_only">
+
+    <strong>How it’s used:</strong>
+    <i>(math is used everywhere)</i>
+</p> -->
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p>
+    <strong>Warunki wstępne:</strong>
+    <ul>
+    <li><i>n &gt; 0</i>.</li>
+    </ul>
+</p>
+
+<p style="text-align: justify;">
+    W związku z misją, mogą być Państwo zainteresowani <a target="_blank" href="https://en.wikipedia.org/wiki/Catalan's_conjecture">Catalan’s conjecture</a>, obecnie udowodnionym twierdzeniem matematycznym, które mówi, że po szczególnym przypadku dwóch kolejnych potęg doskonałych 8 i 9, ilekroć dodatnia liczba całkowita <b>n</b> jest potęgą doskonałą, <b>n – 1</b> nigdy nie jest potęgą doskonałą. Przykładowo, nie musimy przebijać się przez wszystkie potencjalne sposoby wyrażenia liczby jako potęgi liczby całkowitej, aby od razu wiedzieć, że <sup>1234567890-1</sup> nie jest potęgą doskonałą. Ilustruje to również powszechną asymetrię między wykonywaniem obliczeń w przeciwnych kierunkach. Biorąc pod uwagę jakąś dużą liczbę całkowitą, taką jak 4922235242952026704037113243122008064, ale nie wzór, który ją pierwotnie wygenerował, nie jest łatwo stwierdzić, czy ta liczba całkowita jest potęgą doskonałą, czy też potęgą doskonałą plus minus jeden. 
+</p>
+
+<p><i>Misja została zaczerpnięta z <span>Python CCPS 109</span>. Jest ona nauczana dla <span>Ryerson Chang School of Continuing Education</span> przez <a href="https://github.com/ikokkari">Ilkka Kokkarinen</a></i></p>
