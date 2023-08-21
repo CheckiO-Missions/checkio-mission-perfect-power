@@ -1,0 +1,54 @@
+<!-- Describe task in general -->
+
+<p style="text-align: justify;">
+    如果一个正整数<b>n</b> 可以用幂来表示，那么它就是<a target="_blank" href="https://en.wikipedia.org/wiki/Perfect_power">perfect power</a> 。 <b>b<sup>e</sup></b><b>b</b> 和<b>e</b> 这两个整数都大于 1 的幂。(任何正整数 n 总是可以表示为微幂<sup>n1</sup>，所以我们不关心这些）。例如，整数 32、125 和 441 都是完全幂，因为它们分别等于<sup>25</sup>、<sup>53</sup>和<sup>212</sup>。  
+</p>
+<p style="text-align: justify;">
+    此函数应确定正整数<b>n</b> 是否为完全幂。您的函数需要以某种方式遍历足够多的<b>b</b> 和<b>e</b> 的可能组合，当找到某个 和 的可能组合时，立即返回 <b>{% if is_js %}t{% else %}T{% endif %}rue</b>当找到满足以下条件的<b>b</b> 和<b>e</b> 时，立即返回 <b>b<sup>e</sup> == n</b>时，立即返回 <b>{% if is_js %}f{% else %}F{% endif %}alse</b>当尝试了<b>b</b> 和<b>e</b> 的所有相关可能性并发现不符合要求时，返回
+</p>
+<p style="text-align: justify;">
+    由于<b>n</b> 可能会非常大，因此您的函数不应该检查过多的组合，以免超出那些既必要又足以可靠地确定答案的组合。实现这种效率是这个问题的核心教学点。    
+</p>
+
+<!-- <p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}example.png" alt="example" style="max-height: 83px"/>
+</p> -->
+
+<!-- Explain input and output values -->
+<p>
+   <strong>输入</strong>整数 <span>({% if is_js %}number{% else %}int{% endif %})</span>.
+</p>
+
+<p>
+   <strong>输出：</strong>逻辑值 <span>(bool{% if is_js %}ean{% endif %})</span>.
+</p>
+
+
+<p>
+    <strong>示例</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<!-- <p class="for_info_only">
+
+    <strong>How it’s used:</strong>
+    <i>(math is used everywhere)</i>
+</p> -->
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p>
+    <strong>前提条件</strong>
+    <ul>
+    <li><i>n &gt; 0</i>.</li>
+    </ul>
+</p>
+
+<p style="text-align: justify;">
+    与这项任务相关的是，你可能会对<a target="_blank" href="https://en.wikipedia.org/wiki/Catalan's_conjecture">Catalan’s conjecture</a> 感兴趣，这是一个经过验证的数学定理，它指出在 8 和 9 这两个连续的完全幂的特例之后，只要正整数<b>n</b> 是完全幂，<b>n – 1</b> 就永远不是完全幂。例如，我们不必费尽心思研究所有可能的整数幂表达方式，一开始就知道<sup>1234567890-1</sup> 不是完全幂。这也说明了向相反方向进行计算时常见的不对称现象。如果给定一个大整数，如 4922235242952026704037113243122008064，但不给定最初产生这个整数的公式，那么要判断这个整数是完全幂，还是某个完全幂加减一，就不太容易了。 
+</p>
+
+<p><i>该任务摘自<span>Python CCPS 109</span> 。它由<span>Ryerson Chang School of Continuing Education</span> 教授。<a href="https://github.com/ikokkari">Ilkka Kokkarinen</a></i></p>
