@@ -1,0 +1,54 @@
+<!-- Describe task in general -->
+
+<p style="text-align: justify;">
+    Eine positive ganze Zahl <b>n</b> ist eine <a target="_blank" href="https://en.wikipedia.org/wiki/Perfect_power">perfect power</a>, wenn sie als Potenz ausgedrückt werden kann <b>b<sup>e</sup></b> für zwei ganze Zahlen <b>b</b> und <b>e</b>, die beide größer als eins sind. (Jede positive ganze Zahl n kann immer als Trivialpotenz <sup>n1</sup> ausgedrückt werden, so dass wir uns um diese nicht kümmern.) Zum Beispiel sind die ganzen Zahlen 32, 125 und 441 perfekte Potenzen, da sie<sup>25</sup>,<sup>53</sup> bzw.<sup>212</sup> entsprechen.  
+</p>
+<p style="text-align: justify;">
+    Diese Funktion soll feststellen, ob die positive ganze Zahl <b>n</b> eine vollkommene Potenz ist. Ihre Funktion muss irgendwie durch eine ausreichende Anzahl möglicher Kombinationen von <b>b</b> und <b>e</b> iterieren, die funktionieren könnten <b>{% if is_js %}t{% else %}T{% endif %}rue</b> zurück, wenn Sie <b>b</b> und <b>e</b> finden, die die Bedingungen <b>b<sup>e</sup> == n</b>erfüllen, und zurückkehren <b>{% if is_js %}f{% else %}F{% endif %}alse</b> zurück, wenn alle relevanten Möglichkeiten für <b>b</b> und <b>e</b> ausprobiert und für unzureichend befunden wurden.
+</p>
+<p style="text-align: justify;">
+    Da <b>n</b> ziemlich groß werden kann, sollte Ihre Funktion nicht zu viele Kombinationen untersuchen, die über diejenigen hinausgehen, die sowohl notwendig als auch ausreichend sind, um die Antwort zuverlässig zu bestimmen. Das Erreichen dieser Effizienz ist der zentrale pädagogische Punkt dieses Problems.    
+</p>
+
+<!-- <p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}example.png" alt="example" style="max-height: 83px"/>
+</p> -->
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Eingabe:</strong> Ganzzahl <span>({% if is_js %}number{% else %}int{% endif %})</span>.
+</p>
+
+<p>
+   <strong>Ausgabe:</strong> Logischer Wert <span>(bool{% if is_js %}ean{% endif %})</span>.
+</p>
+
+
+<p>
+    <strong>Beispiele:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<!-- <p class="for_info_only">
+
+    <strong>How it’s used:</strong>
+    <i>(math is used everywhere)</i>
+</p> -->
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p>
+    <strong>Vorbedingungen:</strong>
+    <ul>
+    <li><i>n &gt; 0</i>.</li>
+    </ul>
+</p>
+
+<p style="text-align: justify;">
+    Im Zusammenhang mit der Mission könnte Sie <a target="_blank" href="https://en.wikipedia.org/wiki/Catalan's_conjecture">Catalan’s conjecture</a> interessieren, ein heutzutage bewiesenes mathematisches Theorem, das besagt, dass nach dem Spezialfall der beiden aufeinanderfolgenden perfekten Potenzen 8 und 9, wann immer eine positive ganze Zahl <b>n</b> eine perfekte Potenz ist, <b>n – 1</b> niemals eine perfekte Potenz ist. So müssen wir uns nicht durch alle möglichen Möglichkeiten quälen, die Zahl als ganzzahlige Potenz auszudrücken, um von vornherein zu wissen, dass<sup>1234567890-1</sup> keine vollkommene Potenz ist. Dies veranschaulicht auch die übliche Asymmetrie zwischen der Durchführung einer Berechnung in entgegengesetzter Richtung. Wenn man eine große Chungus-Ganzzahl wie 4922235242952026704037113243122008064 hat, aber nicht die Formel, mit der sie ursprünglich berechnet wurde, ist es nicht ganz einfach festzustellen, ob diese Ganzzahl eine perfekte Potenz oder eine perfekte Potenz plus minus eins ist. 
+</p>
+
+<p><i>Die Aufgabe wurde von <span>Python CCPS 109</span> übernommen. Sie wird für <span>Ryerson Chang School of Continuing Education</span> von <a href="https://github.com/ikokkari">Ilkka Kokkarinen</a></i></p>
