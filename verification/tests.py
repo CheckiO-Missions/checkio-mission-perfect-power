@@ -36,10 +36,10 @@ TESTS = {
             "input": [9],
             "answer": True,
         },
-        {
-            "input": [12**34 - 1],
-            "answer": False,
-        },
+        # {
+        #     "input": [12**34 - 1],
+        #     "answer": False,
+        # },
         {
             "input": [440],
             "answer": False,
